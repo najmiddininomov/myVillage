@@ -1,0 +1,80 @@
+.home {
+  position: relative;
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 61, 2, 0.5);
+    z-index: 1;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+
+      span {
+        color: #b8ffb0;
+      }
+    }
+
+    p {
+      margin: 20px auto;
+      max-width: 600px;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    &__icons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+
+      div {
+        font-size: 26px;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        border-radius: 50%;
+        transition: 0.3s ease;
+
+        &:hover {
+          background: #b8ffb0;
+          color: #0b3d02;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .home__btn {
+      display: inline-block;
+      margin-top: 40px;
+      background: #b8ffb0;
+      color: #0b3d02;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s ease;
+
+      &:hover {
+        background: #fff;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
